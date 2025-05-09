@@ -1,7 +1,14 @@
 
+## Dbt 
 target/
 dbt_packages/
 logs/
+.user.yml
+
+## IDE 
 .cursor/
+.vscode/
+
+## Env 
 .env
 .envrc
