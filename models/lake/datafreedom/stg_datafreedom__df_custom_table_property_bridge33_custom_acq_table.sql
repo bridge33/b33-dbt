@@ -1,0 +1,55 @@
+with
+    source as (
+        select *
+        from
+            {{
+                source(
+                    "datafreedom",
+                    "df_custom_table_property_bridge33_custom_acq_table",
+                )
+            }}
+    )
+
+select
+    acquisition_closing_date,
+    acquisition_format,
+    acquisition_price,
+    acquisitions_members,
+    amortization,
+    asset_manager,
+    assistant_property_manager,
+    auction_fee,
+    b33_ownership_percentage,
+    city,
+    code,
+    colloquial_property_name,
+    disposition_date,
+    entity_name,
+    foreclosure_date,
+    fund,
+    id,
+    initial_principal,
+    interest_rate,
+    internal_name_code,
+    jv_partner,
+    land_acreage_at_acquisition,
+    lender,
+    loan_closing_date,
+    loan_servicer,
+    loan_type,
+    property_code,
+    property_id,
+    property_id_number,
+    property_management_company,
+    property_manager,
+    property_name,
+    purchase_platform,
+    seller,
+    square_footage_at_acquisition,
+    state,
+    street_name,
+    street_number,
+    transfer_tax,
+    type,
+    zip_code
+from source

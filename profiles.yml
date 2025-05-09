@@ -1,0 +1,9 @@
+b33_data_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      schema: default
+      host: adb-1150565744018509.9.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/96276e07dd2f1007
+      token: "{{ env_var('DATABRICKS_DBT_TOKEN') }}"

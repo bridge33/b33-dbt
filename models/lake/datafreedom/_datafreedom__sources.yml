@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: datafreedom
+    database: b33_data_landing
+    schema: datafreedom
+    tables:
+      - name: df_financial_general_ledger
+      - name: df_global_amendment_commercial
+      - name: df_global_customer
+      - name: df_custom_table_property_bridge33_custom_acq_table
+      - name: df_global_property
+      - name: df_global_tenant_clause_commercial
+      - name: df_global_tenant_commercial
+      - name: df_global_tenant_option_commercial
+      - name: df_global_tenant_sales_by_month_commercial
+      - name: df_global_tenant_scheduled_charge_commercial
+      - name: df_global_unit_commercial
+      - name: df_global_unit_by_day_commercial
+      - name: df_global_property_list_xref
+      - name: df_Construction_Job
+      - name: df_Construction_Job_Forecast
+      - name: df_Construction_Report_Project_Status
+

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: deal_manager
+    database: b33_data_landing
+    schema: deal_manager
+    tables:
+      - name: deal_manager_spaces
+      - name: deal_manager_leasing_activity

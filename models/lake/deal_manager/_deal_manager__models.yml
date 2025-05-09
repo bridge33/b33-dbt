@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_deal_manager__deal_manager_spaces
+    config: 
+      database: &database b33_data_lake_prod
+      schema: &schema deal_manager
+      alias: deal_manager_spaces
+  - name: stg_deal_manager__deal_manager_leasing_activity
+    config: 
+      database: *database
+      schema: *schema
+      alias: deal_manager_leasing_activity

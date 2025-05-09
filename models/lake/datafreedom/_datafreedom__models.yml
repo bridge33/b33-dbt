@@ -1,0 +1,95 @@
+version: 2
+
+models:
+  - name: stg_datafreedom__df_financial_general_ledger
+    config:
+      database: &database b33_data_lake_prod
+      schema: &schema datafreedom
+      alias: financial_general_ledger
+
+  - name: stg_datafreedom__df_global_amendment_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_amendment_commercial
+
+  - name: stg_datafreedom__df_global_customer
+    config:
+      database: *database
+      schema: *schema
+      alias: global_customer
+  - name: stg_datafreedom__df_custom_table_property_bridge33_custom_acq_table
+    config:
+      database: *database
+      schema: *schema
+      alias: custom_table_property_bridge33_custom_acq_table
+
+  - name: stg_datafreedom__df_global_property
+    config:
+      database: *database
+      schema: *schema
+      alias: global_property
+
+  - name: stg_datafreedom__df_global_tenant_clause_commercial
+    config:
+      database: *database 
+      schema: *schema
+      alias: global_tenant_clause_commercial
+
+  - name: stg_datafreedom__df_global_tenant_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_tenant_commercial
+
+  - name: stg_datafreedom__df_global_tenant_option_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_tenant_option_commercial
+
+  - name: stg_datafreedom__df_global_tenant_sales_by_month_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_tenant_sales_by_month_commercial
+
+  - name: stg_datafreedom__df_global_tenant_scheduled_charge_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_tenant_scheduled_charge_commercial
+
+  - name: stg_datafreedom__df_global_unit_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_unit_commercial
+  - name: stg_datafreedom__df_global_unit_by_day_commercial
+    config:
+      database: *database
+      schema: *schema
+      alias: global_unit_by_day_commercial
+      
+  - name: stg_datafreedom__df_global_property_list_xref
+    config:
+      database: *database
+      schema: *schema
+      alias: global_property_list_xref
+  - name: stg_datafreedom__df_construction_job_forecast
+    config:
+      database: *database
+      schema: *schema
+      alias: construction_job_forecast
+  - name: stg_datafreedom__df_construction_job
+    config:
+      database: *database
+      schema: *schema
+      alias: construction_job
+  - name: stg_datafreedom__df_construction_report_project_status
+    config:
+      database: *database
+      schema: *schema
+      alias: construction_report_project_status
+      
+     

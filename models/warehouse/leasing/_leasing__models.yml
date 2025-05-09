@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_tenants
+    config:
+      database: &database b33_data_warehouse_prod
+      schema: &schema leasing
+  - name: dim_tenant_options
+    config:
+      database: *database
+      schema: *schema
+  - name: dim_amendments
+    config:
+      database: *database
+      schema: *schema
+  - name: dim_amendments_filtered
+    config:
+      database: *database
+      schema: *schema
+  - name: dim_customers
+    config:
+      database: *database
+      schema: *schema
+  - name: dim_properties
+    config:
+      database: *database
+      schema: *schema
+  - name: fact_tenant_sales_by_month
+    config:
+      database: *database
+      schema: *schema

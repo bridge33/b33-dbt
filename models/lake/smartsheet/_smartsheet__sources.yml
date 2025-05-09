@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: datafreedom
+    database: b33_data_landing
+    schema: smartsheet
+    tables:
+      - name: company_mapping

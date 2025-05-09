@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_smartsheet__company_mapping
+    config:
+      database: &database b33_data_lake_prod
+      schema: &schema smartsheet
+      alias: company_mapping

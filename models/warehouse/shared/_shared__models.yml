@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: dim_date
+    config:
+      database: &database b33_data_warehouse_prod
+      schema: &schema shared
